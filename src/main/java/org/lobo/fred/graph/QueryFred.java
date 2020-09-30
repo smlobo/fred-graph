@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,7 +17,7 @@ public class QueryFred {
     private static final String FRED_API = "https://api.stlouisfed.org/fred/";
     private static final String API_KEY = "e12c0787f51ff6db24ac8029710fa175";
 
-    protected  static Map<String, Map<String, Double>> getAllData(String[] seriesArray) {
+    protected  static Map<String, Map<String, Double>> getAllData(List<String> seriesArray) {
         HashMap<String, Map<String, Double>> dataMaps = new HashMap<>();
 
         // Iterate over all input args, returning FRED queried data for each
