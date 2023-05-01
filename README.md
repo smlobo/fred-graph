@@ -22,3 +22,12 @@ Java query FRED data, parse with Jackson, draw a graph with JFreeChart.
 - [FRED API](https://fred.stlouisfed.org/docs/api/fred/)
 - [JFreeChart](http://www.jfree.org/jfreechart/)
 - [Jackson](https://github.com/FasterXML/jackson)
+
+# Update 2023/05/01
+- Changed dependency to JFreeChart 1.5.4 which is built locally
+```
+% git clone https://github.com/jfree/jfreechart.git
+% cd jfreechart/
+% git checkout --track origin/v1.5.x
+% mvn clean install
+```
